@@ -24,6 +24,5 @@ body:
   - type: markdown
     attributes:
       value: |
-        ## チェックリスト
-        - [ ] ラベルを設定する
-
+        #### Issueの作成前に実施すること
+        - ラベルを設定する

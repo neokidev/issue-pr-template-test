@@ -1,6 +1,6 @@
 name: 不具合報告
 description: 不具合を報告する
-title: "[Bug]: "
+title: "[BUG]: "
 labels: ["bug"]
 assignees:
   - ot07
@@ -21,7 +21,7 @@ body:
   - type: textarea
     id: reproduction
     attributes:
-      label: 再現手順（任意）
+      label: 再現手順
       value: |
         1.
         2.
@@ -29,8 +29,22 @@ body:
     validations:
       required: false
   - type: textarea
+    id: cause
+    attributes:
+      label: 原因
+      description: 不具合の原因と思われる箇所が分かれば記載する。
+    validations:
+      required: false
+  - type: textarea
+    id: how-to-fix
+    attributes:
+      label: 修正方法
+      description: 不具合の修正方法が分かれば記載する。
+    validations:
+      required: false
+  - type: textarea
     id: additional
     attributes:
-      label: 補足（任意）
+      label: 補足
     validations:
       required: false

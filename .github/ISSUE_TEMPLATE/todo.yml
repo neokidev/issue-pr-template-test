@@ -1,0 +1,23 @@
+name: TODO
+description: TODOを記載する
+title: "[TODO]: "
+assignees:
+  - ot07
+body:
+  - type: textarea
+    id: outline
+    attributes:
+      label: 概要
+    validations:
+      required: true
+  - type: textarea
+    id: reference
+    attributes:
+      label: 参考情報
+      description: 実施する上で参考になる情報（参考記事など）があれば記載する。
+  - type: textarea
+    id: additional
+    attributes:
+      label: 補足
+    validations:
+      required: false

@@ -9,18 +9,19 @@ body:
     id: what-happened
     attributes:
       label: 概要
-      description: 発生した不具合の概要を記載する
+      description: 発生した不具合の概要を記載する。不具合の内容が分かる動画やスクリーンショットがあれば添付する。
     validations:
       required: true
-  - type: markdown
+  - type: textarea
+    id: expected-behavior
     attributes:
-      value: |
-        以下、オプションです。よろしければご記入ください。
+      label: 期待する動作
+    validations:
+      required: true
   - type: textarea
     id: reproduction
     attributes:
-      label: 再現手順
-      description: 不具合の再現方法を記載する
+      label: 再現手順（任意）
       value: |
         1.
         2.
@@ -28,14 +29,8 @@ body:
     validations:
       required: false
   - type: textarea
-    id: expected-behavior
-    attributes:
-      label: 期待する動作
-    validations:
-      required: false
-  - type: textarea
     id: additional
     attributes:
-      label: 補足
+      label: 補足（任意）
     validations:
       required: false

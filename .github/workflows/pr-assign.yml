@@ -2,7 +2,9 @@ name: pull request assign
 
 on:
   pull_request:
-    types: opened
+    types: 
+      - opened
+      - unassigned
 
 permissions:
   pull-requests: write

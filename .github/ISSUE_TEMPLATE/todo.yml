@@ -11,6 +11,13 @@ body:
     validations:
       required: true
   - type: textarea
+    id: subtasks
+    attributes:
+      label: サブタスク
+      description: 現時点でタスクを細分化できる場合は記載する。
+    validations:
+      required: false
+  - type: textarea
     id: reference
     attributes:
       label: 参考情報
